@@ -31,8 +31,7 @@ def fitness(particula, distancias, automomia):
     for veiculo in range(1, num_veiculos + 1):
         rota_veiculo = [cliente for cliente, v in enumerate(particula) if v == veiculo]
         distancia_total += sum(distancias[cliente1][cliente2] for cliente1, cliente2 in zip(rota_veiculo[:-1], rota_veiculo[1:]))
-    if(autonomia<0)
-        distancia_total = distancia_total/100*-(automomia)
+
     return distancia_total
 
 # Algoritmo de Otimização por Enxame de Partículas (PSO)
